@@ -81,7 +81,9 @@ Developed by Jagdev Singh Dosanjh, educator and modular app designer. Built to e
 MIT License. See LICENSE file for details.
 MIT License
 
-Copyright (c) 2025 Jagdev Singh Dosanjh : https://dosanjhpubsasr.org
+Copyright (c) 2025 Jagdev Singh Dosanjh : 
+ 
+For more information, visit: https://www.dosanjhpubsasr.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
