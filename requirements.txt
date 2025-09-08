@@ -1,0 +1,34 @@
+# Core app framework
+streamlit>=1.33.0
+
+# Chemistry engine
+rdkit>=2025.3.6
+openbabel>=3.1.1
+
+# 3D visualization
+py3Dmol>=1.8.0
+
+# Data handling
+pandas>=2.2.2
+numpy>=1.26.0
+scipy>=1.13.0
+
+# Plotting (optional for angle graphs or bond length histograms)
+matplotlib>=3.8.0
+
+# Type hints and editor support
+rdkit-stubs>=2024.3.0
+
+# PDF generation
+reportlab>=4.0.0
+fpdf>=1.7.2
+
+# Type stubs for editor support
+types-reportlab>=2024.3.0
+
+# PDF export (optional for annotated diagrams or reports)
+reportlab>=4.0.0
+fpdf>=1.7.2
+
+# Testing (optional for modular validation)
+pytest>=8.2.0
