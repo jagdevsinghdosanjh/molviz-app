@@ -1,0 +1,50 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Streamlit
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter notebooks (if used)
+.ipynb_checkpoints/
+
+# Test and coverage
+htmlcov/
+.coverage
+.cache/
+pytest_cache/
+
+# Exported files
+*.pdf
+*.svg
+*.png
+geometry_report.pdf
+
+# Dependency lock files (optional)
+poetry.lock
+Pipfile.lock
