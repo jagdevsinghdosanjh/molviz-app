@@ -15,7 +15,11 @@ sample_smiles = {
     "Methane": "C",
     "Water": "O",
     "Ammonia": "N",
-    "Benzene": "c1ccccc1"
+    "Benzene": "c1ccccc1",
+    "BHC":"Cl[C@@H]1Cl[C@@H](Cl)[C@H](Cl)[C@@H](Cl)[C@H]1Cl",
+    "Aniline":"c1ccccc1N",
+    "Lactic Acid":"CC(C(=O)O)O",
+    "Glycerine":"OCC(O)CO"
 }
 
 def main():
