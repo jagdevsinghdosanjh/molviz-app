@@ -1,0 +1,26 @@
+Name,SMILES
+Methane,C
+Ethanol,CCO
+Benzene,c1ccccc1
+Water,O
+Ammonia,N
+Acetic Acid,CC(=O)O
+Methanol,CO
+Cyclohexane,C1CCCCC1
+Chloroethene,C=CCl
+Nitromethane,CN(=O)=O
+Aspirin,CC(=O)OC1=CC=CC=C1C(=O)O
+Propane,CCC
+Hydrogen Peroxide,OO
+Pyridine,c1ccncc1
+Diazepam,CN(C)C(=O)CN=C(c1ccccc1)c2ccccc2
+Sulfur Hexafluoride,FS(F)(F)(F)(F)F
+Glycerol,OCC(O)CO
+Toluene,Cc1ccccc1
+Butadiene,C=CC=C
+Formaldehyde,C=O
+Acetone,CC(=O)C
+Phenol,c1ccccc1O
+Aniline,c1ccccc1N
+Lactic Acid,CC(C(=O)O)O
+Benzene Hexachloride,Cl[C@@H]1Cl[C@@H](Cl)[C@H](Cl)[C@@H](Cl)[C@H]1Cl
