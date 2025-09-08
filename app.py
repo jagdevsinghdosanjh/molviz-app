@@ -16,7 +16,7 @@ sample_smiles = {
     "Water": "O",
     "Ammonia": "N",
     "Benzene": "c1ccccc1",
-    "BHC":"Cl[C@@H]1Cl[C@@H](Cl)[C@H](Cl)[C@@H](Cl)[C@H]1Cl",
+    "Diazepam":"CN(C)C(=O)CN=C(c1ccccc1)c2ccccc2",
     "Aniline":"c1ccccc1N",
     "Lactic Acid":"CC(C(=O)O)O",
     "Glycerine":"OCC(O)CO"
