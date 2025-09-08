@@ -17,10 +17,16 @@ scipy>=1.13.0
 matplotlib>=3.8.0
 
 # Type hints and editor support
-rdkit-stubs<=0.8
-types-reportlab
+rdkit-stubs>=2024.3.0
 
 # PDF generation
+reportlab>=4.0.0
+fpdf>=1.7.2
+
+# Type stubs for editor support
+types-reportlab>=2024.3.0
+
+# PDF export (optional for annotated diagrams or reports)
 reportlab>=4.0.0
 fpdf>=1.7.2
 
