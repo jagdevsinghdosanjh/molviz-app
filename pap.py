@@ -1,9 +1,5 @@
 import streamlit as st
-from rdkit import Chem # noqa
-from rdkit.Chem import AllChem # noqa
-from rdkit.Chem.Draw import MolToImage
-from rdkit.Chem import rdDepictor
-
+from rdkit.Chem import Draw
 from app.ui import render_ui
 from app.parser import parse_molecule
 from app.geometry import compute_geometry
@@ -44,9 +40,7 @@ def main():
     if view_mode == "3D":
         render_3d(mol)
     else:
-        rdDepictor.Compute2DCoords(mol)
-        img = MolToImage(mol, size=(300, 300))
-        st.image(img, caption="2D Structure")
+        st.image(Draw.MolToImage(mol, size=(300, 300)), caption="2D Structure")
 
     if st.button("📤 Export Geometry as PDF"):
         success = export_geometry_pdf("geometry_report.pdf", geometry_data, smiles)
