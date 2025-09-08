@@ -2,6 +2,16 @@ import pandas as pd
 from app.parser import parse_molecule
 from app.geometry import compute_geometry
 from app.exporter import export_geometry_pdf
+import zipfile
+import os
+
+def bundle_pdfs_to_zip(pdf_folder: str, zip_name: str = "molecule_reports.zip") -> str:
+    with zipfile.ZipFile(zip_name, "w") as zipf:
+        for filename in os.listdir(pdf_folder):
+            if filename.endswith(".pdf"):
+                zipf.write(os.path.join(pdf_folder, filename), arcname=filename)
+    return zip_name
+
 
 def process_molecule_row(name: str, smiles: str, export: bool = True) -> dict:
     mol = parse_molecule(smiles)

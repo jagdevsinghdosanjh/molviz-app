@@ -1,6 +1,15 @@
 import streamlit as st
 import pandas as pd
 from bulk_processor import process_molecule_row
+import os # noqa
+from bulk_processor import bundle_pdfs_to_zip
+
+pdf_folder = "exports"
+if st.button("📦 Download All PDFs as ZIP"):
+    zip_path = bundle_pdfs_to_zip(pdf_folder)
+    with open(zip_path, "rb") as f:
+        st.download_button("⬇️ Download ZIP", f, file_name="molecule_reports.zip")
+
 
 st.title("📁 Bulk Molecular Processor")
 

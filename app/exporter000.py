@@ -1,21 +1,15 @@
-import os
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from datetime import datetime
-from app.config import DEFAULT_SMILES, PDF_FILENAME, PAGE_TITLE  # noqa
+from app.config import DEFAULT_SMILES, PDF_FILENAME, PAGE_TITLE # noqa
+
 
 def export_geometry_pdf(filename: str, geometry_data: dict, smiles: str):
     """
     Exports molecular geometry details to a simple annotated PDF.
-    Saves to 'exports/' directory for bundling.
     """
     try:
-        # Ensure export directory exists
-        export_dir = "exports"
-        os.makedirs(export_dir, exist_ok=True)
-        output_path = os.path.join(export_dir, filename)
-
-        c = canvas.Canvas(output_path, pagesize=letter)
+        c = canvas.Canvas(filename, pagesize=letter)
         width, height = letter
 
         # Title
@@ -32,12 +26,13 @@ def export_geometry_pdf(filename: str, geometry_data: dict, smiles: str):
         c.drawString(50, height - 120, "Geometry Summary:")
         c.setFont("Helvetica", 11)
 
-        formatted_angles = ', '.join([f"{angle:.2f}°" for angle in geometry_data.get("angles", [])])
-        formatted_lengths = ', '.join([f"{length:.2f} Å" for length in geometry_data.get("lengths", [])])
+        # Format angles and lengths with clearer variable names
+        formatted_angles = ', '.join([f"{bond_angle:.2f}°" for bond_angle in geometry_data['angles']])
+        formatted_lengths = ', '.join([f"{bond_length:.2f} Å" for bond_length in geometry_data['lengths']])
 
-        c.drawString(70, height - 140, f"Geometry Type: {geometry_data.get('geometry', 'N/A')}")
-        c.drawString(70, height - 160, f"Bond Angles: {formatted_angles or 'N/A'}")
-        c.drawString(70, height - 180, f"Bond Lengths: {formatted_lengths or 'N/A'}")
+        c.drawString(70, height - 140, f"Geometry Type: {geometry_data['geometry']}")
+        c.drawString(70, height - 160, f"Bond Angles: {formatted_angles}")
+        c.drawString(70, height - 180, f"Bond Lengths: {formatted_lengths}")
 
         # Footer
         c.setFont("Helvetica-Oblique", 9)

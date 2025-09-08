@@ -23,4 +23,4 @@ Acetone,CC(=O)C
 Phenol,c1ccccc1O
 Aniline,c1ccccc1N
 Lactic Acid,CC(C(=O)O)O
-Benzene Hexachloride,Cl[C@@H]1Cl[C@@H](Cl)[C@H](Cl)[C@@H](Cl)[C@H]1Cl
+Benzene Hexachloride,ClC1(Cl)C(Cl)C(Cl)C(Cl)C1Cl
