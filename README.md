@@ -82,6 +82,8 @@ MIT License. See LICENSE file for details.
 MIT License
 
 Copyright (c) 2025 Jagdev Singh Dosanjh : 
+🔗 [Visit Dosanjh Publications](https://www.dosanjhpubsasr.org)
+
  
 For more information, visit: https://www.dosanjhpubsasr.org
 
