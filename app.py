@@ -24,7 +24,7 @@ sample_smiles = {
 
 def main():
     st.set_page_config(page_title="Molecular Geometry Visualizer", layout="wide")
-    st.title("🔬 Molecular Geometry Explorer")
+    st.title("🔬 Molecular Geometry Explorer - Simplified Molecular Input Line Entry System")
 
     col1, col2 = st.columns([2, 1])
     with col1:
